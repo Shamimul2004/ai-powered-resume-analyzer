@@ -1,0 +1,27 @@
+package com.sammy.demo.dto;
+
+public class UserRequest {
+
+    private String name;
+    private int age;
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+    // Setter
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter
+    public int getAge() {
+        return age;
+    }
+
+    // Setter
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
