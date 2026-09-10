@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Column;
 
 @Entity
 public class Resume {
@@ -14,6 +15,7 @@ public class Resume {
 
     private String name;
     private String email;
+    @Column(columnDefinition = "LONGTEXT")
     private String extractedText;
 
     private Integer score;
@@ -69,4 +71,15 @@ public class Resume {
     public void setSkillsFound(String skillsFound) {
         this.skillsFound = skillsFound;
     }
+
+    @Column(columnDefinition = "LONGTEXT")
+    private String aiAnalysis;
+
+    public String getAiAnalysis() {
+        return aiAnalysis;
+    }
+    public void setAiAnalysis(String aiAnalysis) {
+        this.aiAnalysis = aiAnalysis;
+    }
+
 }
