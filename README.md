@@ -177,7 +177,7 @@ GEMINI_API_KEY
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Shamimul2004/resume-analyzer.git
+git clone https://github.com/Shamimul2004/ai-powered-resume-analyzer.git
 ```
 ### 2. Configure MySQL
 
